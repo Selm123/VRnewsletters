@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(".sing-up-btn").on("click", function () {
+  $(".sign-up-btn").on("click", function () {
     $(".pop-up").addClass("show");
   });
 
@@ -67,7 +67,7 @@ $(document).ready(function () {
     }
   });
 
-  
+
 
   // $(".header-name").text("show!");
 });
