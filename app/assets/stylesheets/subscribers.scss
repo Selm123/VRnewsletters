@@ -1,6 +1,9 @@
-// Place all the styles related to the Subscribers controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+.body {
+  font-family: Roboto;
+}
 
 .header {
   height: 35px;
@@ -16,8 +19,10 @@
 }
 
 .header-logo {
-  width: 50px;
-  height: 20px;
+  width: 187px;
+  height: 44px;
+  left: 66px;
+  top: 40px;
 }
 
 .dropdown {
@@ -30,10 +35,9 @@
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 5px 5px;
   z-index: 1;
-
 }
 
 .dropdown:hover .dropdown-content {
@@ -48,37 +52,38 @@
   font-size: 40px;
 }
 
-
-
-
-.pop-up {
-  position: absolute;
-  top: 79px;
-  right: 11.4vw;
-  background-color: pink;
-  width: 215px;
-  padding: 20px 15px;
-  margin: 0 auto;
-  border-radius: 10px;
-}
-
-.form-input {
-  width: 200px;
-  height: 20px;
-  resize: none;
-  border: 1px solid black;
-  border-radius: 9px;
-}
-
 ::placeholder {
   font-family: helvetica;
   line-height: 20px;
 }
 
 .pop-up {
-  background-color: pink;
+  background-color: black;
+  color: white;
+  width: 90vw;
+  margin: 0 auto;
+  position: absolute;
+  left: 5vw;
+  height: 30vh;
+  display: none;
 }
 
+.form-input {
+  width: 184px;
+  height: 38px;
+  left: 39px;
+  top: 113px;
+  resize: none;
+
+  background: rgba(229, 229, 229, 0.54);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 9px;
+}
+
+.show {
+  display: block;
+}
 
 .submit-button {
   background-color: black;
@@ -89,4 +94,69 @@
   border-radius: 7px;
   width: 140px;
   height: 40px;
+}
+
+.main {
+  background-image: url("/assets/bacground.png");
+  background-size: cover;
+  height: 400px;
+}
+
+button {
+  width: 372px;
+  height: 114px;
+  border-radius: 30px;
+  background-color: #1e65c1;
+  color: white;
+  font-size: 200%;
+}
+
+.title p {
+  position: absolute;
+  width: 183px;
+  height: 161px;
+  left: 96px;
+  top: 169px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #000000;
+}
+
+.subscribe {
+  color: white;
+  position: absolute;
+  width: 90vw;
+  height: 10vh;
+  left: 22px;
+  top: 567px;
+
+  background: #181818;
+  border-radius: 15px;
+
+}
+
+.close {
+  margin-left: 80vw;
+  width: 10vw;
+  height: 4vh;
+  background-color: black;
+  border:0;
+}
+
+.submit-button {
+  width: 372px;
+  height: 114px;
+  border-radius: 30px;
+  background-color: #1e65c1;
+  color: white;
+  font-size: 200%;
 }
