@@ -1,3 +1,92 @@
 // Place all the styles related to the Subscribers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.header {
+  height: 35px;
+  width: 100vw;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+  display: inline-block;
+}
+
+.header-name {
+  display: inline-block;
+  font-weight: normal;
+}
+
+.header-logo {
+  width: 50px;
+  height: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 5px 5px;
+  z-index: 1;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: grey;
+}
+
+.dropdown-icon {
+  font-size: 40px;
+}
+
+
+
+
+.pop-up {
+  position: absolute;
+  top: 79px;
+  right: 11.4vw;
+  background-color: pink;
+  width: 215px;
+  padding: 20px 15px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.form-input {
+  width: 200px;
+  height: 20px;
+  resize: none;
+  border: 1px solid black;
+  border-radius: 9px;
+}
+
+::placeholder {
+  font-family: helvetica;
+  line-height: 20px;
+}
+
+.pop-up {
+  background-color: pink;
+}
+
+
+.submit-button {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  width: 140px;
+  height: 40px;
+}

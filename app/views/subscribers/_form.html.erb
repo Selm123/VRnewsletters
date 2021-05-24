@@ -1,42 +1,46 @@
-<%= form_with(model: subscriber, local: true) do |form| %>
-  <% if subscriber.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(subscriber.errors.count, "error") %> prohibited this subscriber from being saved:</h2>
 
-      <ul>
-      <% subscriber.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+  <%= form_with(model: subscriber, local: true) do |form| %>
+    <% if subscriber.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(subscriber.errors.count, "error") %> prohibited this subscriber from being saved:</h2>
+
+        <ul>
+        <% subscriber.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+
+    <div class="field-div">
+      <%= form.label :first_name, 'First Name' %>
+      <%= form.text_area :first_name, :class => "form-input" %>
+    </div>
+
+    <div class="field-div">
+      <%= form.label :last_name, 'Surname' %>
+      <%= form.text_area :last_name, :class => "form-input" %>
+    </div>
+
+    <div class="field-div">
+      <%= form.label :email, 'Email Address' %>
+      <%= form.text_area :email, :class => "form-input", placeholder: "Enter your email here" %>
+    </div>
+
+    <div class="tixboxes-container">
+      <div class="field-div">
+        <%= form.label :software, 'Games:' %>
+        <%= form.check_box :software, :class => "form-tickbox" %>
+      </div>
+
+      <div class="field-div">
+        <%= form.label :hardware, 'Hardware:' %>
+        <%= form.check_box :hardware, :class => "form-tickbox" %>
+      </div>
+    </div>
+
+    <div class="button-div">
+      <%= form.submit "Sign Up", :class => 'submit-button'%>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_area :email %>
-  </div>
-
-  <div class="field">
-    <%= form.label :first_name %>
-    <%= form.text_area :first_name %>
-  </div>
-
-  <div class="field">
-    <%= form.label :last_name %>
-    <%= form.text_area :last_name %>
-  </div>
-
-  <div class="field">
-    <%= form.label :software %>
-    <%= form.check_box :software %>
-  </div>
-
-  <div class="field">
-    <%= form.label :hardware %>
-    <%= form.check_box :hardware %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit "Subscribe!"%>
-  </div>
-<% end %>

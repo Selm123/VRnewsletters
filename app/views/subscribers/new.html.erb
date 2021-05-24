@@ -1,9 +1,23 @@
-<h1>New Subscriber</h1>
+<div class='header'>
 
-<td><%= link_to 'Admin', subscribers_path %></td>
+  <div class="dropdown">
+    <span class='dropdown-icon'>☰</span>
+    <div class="dropdown-content">
+      <p class='dropdown-item'>Hello World!</p>
+      <p class='dropdown-item'>Hello Alex!</p>
+      <p class='dropdown-item'>Hello Faith!</p>
+    </div>
+  </div>
 
-<%= render 'form', subscriber: @subscriber %>
+  <img src="/assets/logo.jpg" alt="company logo" class='header-logo'>
 
+  <h1 class='header-name'>oculus</h1>
+
+</div>
+
+<div class='pop-up'
+  <%= render 'form', subscriber: @subscriber %>
+</div>
 <!-- <script>
   console.log('hey')
   document.querySelector('form').addEventListener('submit', (e) => e.preventDefault());
