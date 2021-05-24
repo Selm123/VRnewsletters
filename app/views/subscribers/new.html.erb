@@ -4,4 +4,7 @@
 
 <%= render 'form', subscriber: @subscriber %>
 
-<%= link_to 'Back', subscribers_path %>
+<script>
+  console.log('hey')
+  document.querySelector('form').addEventListener('submit', (e) => e.preventDefault());
+</script>
