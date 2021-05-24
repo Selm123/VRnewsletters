@@ -1,9 +1,9 @@
 $(document).ready(function () {
   console.log("hello!");
 
-  const show = (element) => {
-    element.addClass("show");
-  };
+//   const show = (element) => {
+//     element.addClass("show");
+//   };
 
   $(".close").on("click", function () {
     $(".pop-up").removeClass("show");
