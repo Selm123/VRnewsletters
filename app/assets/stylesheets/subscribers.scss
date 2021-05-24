@@ -52,25 +52,6 @@
   font-size: 40px;
 }
 
-.pop-up {
-  position: absolute;
-  top: 79px;
-  right: 11.4vw;
-  background-color: pink;
-  width: 215px;
-  padding: 20px 15px;
-  margin: 0 auto;
-  border-radius: 10px;
-}
-
-.form-input {
-  width: 200px;
-  height: 20px;
-  resize: none;
-  border: 1px solid black;
-  border-radius: 9px;
-}
-
 ::placeholder {
   font-family: helvetica;
   line-height: 20px;
@@ -92,11 +73,12 @@
   height: 38px;
   left: 39px;
   top: 113px;
+  resize: none;
 
   background: rgba(229, 229, 229, 0.54);
   border: 1px solid #000000;
   box-sizing: border-box;
-  border-radius: 12px;
+  border-radius: 9px;
 }
 
 .show {
@@ -159,7 +141,7 @@ button {
 
   background: #181818;
   border-radius: 15px;
-  
+
 }
 
 .close {
