@@ -25,7 +25,7 @@ class SubscribersController < ApplicationController
 
     respond_to do |format|
       if @subscriber.save
-        format.html { redirect_to new_subscriber_path, notice: "Subscriber was successfully created." }
+        format.html { redirect_to @subscriber, notice: "Subscriber was successfully created." }
         format.json { render :show, status: :created, location: @subscriber }
       else
         format.html { render :new, status: :unprocessable_entity }
