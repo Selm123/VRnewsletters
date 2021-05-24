@@ -1,6 +1,6 @@
 class SubscribersController < ApplicationController
   before_action :set_subscriber, only: %i[ show edit update destroy ]
-
+  before_action :check_for_admin, :except => [:new]
   # GET /subscribers or /subscribers.json
   def index
     @subscribers = Subscriber.all
