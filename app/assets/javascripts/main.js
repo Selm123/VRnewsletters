@@ -3,6 +3,10 @@ $(document).ready(function () {
     $(".pop-up").addClass("show");
   });
 
+  $(".close").on("click", function () {
+    $(".pop-up").removeClass("show");
+  });
+
   const validateName = (name) => {
     let nameArr = name.split("");
     for (let i = 0; i < nameArr.length; i++) {
