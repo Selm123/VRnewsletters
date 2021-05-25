@@ -40,6 +40,7 @@ $(document).ready(function () {
   };
 
   $(".submit-button").on("click", function () {
+    console.log('submit')
     if (!validateName($(".fn-input").val())) {
       alert("invalid first name");
     }
@@ -51,21 +52,30 @@ $(document).ready(function () {
     }
   });
 
-  $(".submit-button").on("click", function () {
-    if (
-      validateName($(".fn-input").val()) &&
-      validateName($(".ln-input").val()) &&
-      validateEmail($(".email-input").val())
-    ) {
-      $(".pop-up").html("<button class='close1'>X</button><p>WELCOME TO THE CUTTING EDGE OF VR</p> <p>We’ll keep you updated with the latest from Oculus!</p> <p><button class='back-btn'>BACK TO SITE</button></p>");
-      $(".close1").on("click", function () {
-        $(".pop-up").removeClass("show");
-      });
-      $(".back-btn").on("click", function () {
-        $(".pop-up").removeClass("show");
-      });
-    }
-  });
+  $( '.homepage-link' ).on('click', function () {
+    $('.subcribe').hide();
+    console.log('working');
+  })
+
+  // $(".submit-button").on("click", function () {
+  //   console.log('submit 2')
+  //
+  //   // if (
+  //   //   validateName($(".fn-input").val()) &&
+  //   //   validateName($(".ln-input").val()) &&
+  //   //   validateEmail($(".email-input").val())
+  //   // ) {
+  //   //
+  //   // //   $(".pop-up").html("<button class='close1'>X</button><p>WELCOME TO THE CUTTING EDGE OF VR</p> <p>We’ll keep you updated with the latest from Oculus!</p> <p><button class='back-btn'>BACK TO SITE</button></p>");
+  //   // //   $(".close1").on("click", function () {
+  //   // //     $(".pop-up").removeClass("show");
+  //   // //   });
+  //   // //   $(".back-btn").on("click", function () {
+  //   // //     $(".pop-up").removeClass("show");
+  //   // //   });
+  //   // }
+  //   return true;
+  // });
 
 
 
