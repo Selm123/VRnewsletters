@@ -257,3 +257,11 @@
 .tickbox-title {
   font-size: 2em;
 }
+
+input[type="checkbox" i] {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background: rgba(229, 229, 229, 0.54)
+}
