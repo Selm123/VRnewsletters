@@ -65,11 +65,11 @@ $(document).ready(function () {
       return false;
     }
 
-    if (!$("form-tickbox").is(":checked")) {
-      $('.popup-topper').html('<p>Please select at least one update.</p>')
-      $('.popup-topper').addClass('error');
-      return false;
-    }
+    // if (!$("form-tickbox").is(":checked")) {
+    //   $('.popup-topper').html('<p>Please select at least one update.</p>')
+    //   $('.popup-topper').addClass('error');
+    //   return false;
+    // }
 
     $('.errors').empty();
     return true;
