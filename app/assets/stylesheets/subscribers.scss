@@ -2,11 +2,16 @@
 
 
 .body {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
 }
 
 .hide {
   display: none;
+}
+
+.error {
+  color: #FF9494;
+  font-size: !important 15px;
 }
 
 .header {
@@ -60,12 +65,17 @@
 }
 
 ::placeholder {
-  font-family: helvetica;
+  font-family: 'Roboto', sans-serif;
   line-height: 20px;
 }
 
 .pop-up {
+<<<<<<< HEAD
 
+=======
+  font-family: 'Roboto', sans-serif;
+  top: 25vh;
+>>>>>>> 6346ef1b4f042d86a7331105e684efd8b7e84853
   background-color: black;
   color: white;
   width: 90vw;
@@ -78,6 +88,7 @@
 }
 
 .subscribed-pop-up {
+  font-family: 'Roboto', sans-serif;
   top: 25vh;
   background-color: black;
   color: white;
@@ -162,7 +173,7 @@
   left: 25vw;
   top: 169px;
 
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 350%;
@@ -176,6 +187,7 @@
 }
 
 .subscribe {
+  font-family: 'Roboto', sans-serif;
   color: white;
   position: absolute;
   width: 90vw;
@@ -216,14 +228,6 @@
 .pop-up-wrapper {
   width: 80%;
   margin: 0 auto;
-}
-
-.pop-up-wrapper p{
-  font-size: 300%;
-}
-
-.pop-up-wrapper span{
-  font-size: 200%;
 }
 
 // .pop-up-wrapper label{

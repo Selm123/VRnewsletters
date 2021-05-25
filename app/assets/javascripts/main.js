@@ -41,23 +41,37 @@ $(document).ready(function () {
 
   $(".submit-button").on("click", function () {
     if (!validateName($(".fn-input").val())) {
-      alert("invalid first name");
+      // alert("invalid first name");
+      $('.popup-topper').html('<p>Invalid first name</p>');
+      $('.popup-topper').addClass('error');
       return false;
     }
     if (!validateName($(".ln-input").val())) {
-      alert("invalid last name");
+      // alert("invalid last name");
+      $('.popup-topper').html('<p>Invalid last name</p>');
+      $('.popup-topper').addClass('error');
       return false;
     }
     if (!validateEmail($(".email-input").val())) {
-      alert("invalid email");
+      // alert("invalid email");
+      $('.popup-topper').html('<p>Invalid email</p>');
+      $('.popup-topper').addClass('error');
       return false;
     }
 
     if (!$(".termsconditions-box").is(":checked")) {
-      alert("Agree to terms and conditions to proceed.");
+      $('.popup-topper').html('<p>Please tick the terms and privacy box if you wish to proceed.</p>')
+      $('.popup-topper').addClass('error');
       return false;
     }
 
+    if (!$("form-tickbox").is(":checked")) {
+      $('.popup-topper').html('<p>Please select at least one update.</p>')
+      $('.popup-topper').addClass('error');
+      return false;
+    }
+
+    $('.errors').empty();
     return true;
   });
 
