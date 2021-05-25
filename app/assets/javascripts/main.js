@@ -8,6 +8,7 @@ $(document).ready(function () {
   });
 
   const validateName = (name) => {
+    name = name.trim();
     let nameArr = name.split("");
     for (let i = 0; i < nameArr.length; i++) {
       if (!isNaN(nameArr[i] - 0)) {
@@ -22,7 +23,8 @@ $(document).ready(function () {
   };
 
   const validateEmail = (email) => {
-    let emailArr = email.split("");
+    email = email.trim();
+    let emailArr = email.trim().split("");
     let countAt = 0;
     let countDot = 0;
     for (let i = 0; i < emailArr.length; i++) {
