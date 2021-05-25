@@ -10,11 +10,13 @@
 }
 
 .header {
-  height: 35px;
+  height: 70px;
   width: 100vw;
   padding-bottom: 20px;
   border-bottom: 1px solid black;
   display: inline-block;
+  position: absolute;
+  top:5vh;
 }
 
 .header-name {
@@ -53,7 +55,8 @@
 }
 
 .dropdown-icon {
-  font-size: 40px;
+  font-size: 100px;
+  position: relative;
 }
 
 ::placeholder {
@@ -69,7 +72,7 @@
   margin: 0 auto;
   position: absolute;
   left: 5vw;
-  height: 50vh;
+  height: 70vh;
   display: none;
 }
 
@@ -109,26 +112,40 @@
   border-radius: 7px;
   width: 140px;
   height: 40px;
-  
+  left: 20vw;
+  position: absolute;
 }
 
 .main {
   background-image: url("/assets/bacground.png");
-  background-size: cover;
+  // background-color: orange;
+  background-size: contain;
   background-position: center;
-  width: 100vw;
-  height: 400px;
-  margin-top: 35px;
+  background-repeat: no-repeat;
+  height: 60vh;
+  margin-top: 50px;
+  position: relative;
+  right: 5px;
 }
 
 .buy-btn {
-
+  width: 446.4px;
+  height: 136.8px;
+  border-radius: 60px;
+  background-color: #1e65c1;
+  color: white;
+  font-size: 200%;
+  border: none;
+  margin: 0 auto;
+  position: absolute;
+  top: 45vh;
+  left: 25vw
 }
 
 .sign-up-btn {
-  width: 372px;
+  width: 80vw;
   height: 114px;
-  border-radius: 30px;
+  border-radius: 60px;
   background-color: #1e65c1;
   color: white;
   font-size: 200%;
@@ -140,14 +157,14 @@
   position: absolute;
   width: 183px;
   height: 161px;
-  left: 96px;
+  left: 25vw;
   top: 169px;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 40px;
-  line-height: 36px;
+  font-size: 350%;
+  // line-height: 36px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -160,21 +177,29 @@
   color: white;
   position: absolute;
   width: 90vw;
-  height: 10vh;
-  left: 22px;
-  top: 567px;
+  height: 25vh;
+  left: 5vw;
+  top: 62vh;
 
   background: #181818;
   border-radius: 15px;
+  text-align: center;
+
+}
+
+.subscribe p{
+  font-size: 400%;
 
 }
 
 .close {
-  margin-left: 80vw;
+  margin-left: 70vw;
   width: 10vw;
   height: 4vh;
   background-color: black;
   border:0;
+  color: white;
+  font-size: 350%;
 }
 
 .submit-button {
@@ -184,4 +209,25 @@
   background-color: #1e65c1;
   color: white;
   font-size: 200%;
+}
+
+.pop-up-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.pop-up-wrapper p{
+  font-size: 300%;
+}
+
+.pop-up-wrapper span{
+  font-size: 200%;
+}
+
+// .pop-up-wrapper label{
+//   font-size: 350%;
+// }
+
+.field-div {
+  // display: inline-block;
 }

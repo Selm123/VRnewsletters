@@ -15,17 +15,17 @@
   <button class="close">X</button>
   <p>Just need a few details...</p>
   <div class="field-div">
-    <%= form.label :first_name, 'First Name' %>
+    <p><%= form.label :first_name, 'First Name' %></p>
     <%= form.text_area :first_name, :class => "form-input fn-input"%>
   </div>
 
   <div class="field-div">
-    <%= form.label :last_name, 'Surname' %>
+    <p><%= form.label :last_name, 'Surname' %></p>  
     <%= form.text_area :last_name, :class => "form-input ln-input" %>
   </div>
 
   <div class="field-div">
-    <%= form.label :email, 'Email' %>
+    <p><%= form.label :email, 'Email' %></p> 
     <%= form.text_area :email, :class => "form-input email-input", placeholder: "Enter your email here"%>
   </div>
 
