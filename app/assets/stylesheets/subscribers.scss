@@ -15,7 +15,7 @@
 }
 
 .header {
-  height: 70px;
+  height: 135px;
   width: 100vw;
   padding-bottom: 20px;
   border-bottom: 1px solid black;
@@ -30,10 +30,9 @@
 }
 
 .header-logo {
-  width: 187px;
-  height: 44px;
-  left: 66px;
-  top: 40px;
+  width: 429px;
+  height: 150px;
+
 }
 
 .dropdown {
@@ -62,6 +61,7 @@
 .dropdown-icon {
   font-size: 100px;
   position: relative;
+  bottom: 38px;
 }
 
 ::placeholder {
@@ -70,12 +70,8 @@
 }
 
 .pop-up {
-<<<<<<< HEAD
-
-=======
   font-family: 'Roboto', sans-serif;
-  top: 25vh;
->>>>>>> 6346ef1b4f042d86a7331105e684efd8b7e84853
+  top: 13vh;
   background-color: black;
   color: white;
   width: 90vw;
@@ -157,7 +153,7 @@
 
 .sign-up-btn {
   width: 80vw;
-  height: 114px;
+  height: 136px;
   border-radius: 60px;
   background-color: #1e65c1;
   color: white;
@@ -170,7 +166,7 @@
   position: absolute;
   width: 183px;
   height: 161px;
-  left: 25vw;
+  left: 24vw;
   top: 169px;
 
   font-family: 'Roboto', sans-serif;
@@ -182,6 +178,7 @@
   align-items: center;
   text-align: center;
   letter-spacing: -0.02em;
+  width: 508px;
 
   color: #000000;
 }
@@ -202,8 +199,8 @@
 }
 
 .subscribe p{
-  font-size: 400%;
-
+  font-size: 300%;
+  padding: 0px 44px;
 }
 
 .close {
