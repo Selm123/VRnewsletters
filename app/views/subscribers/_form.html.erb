@@ -38,13 +38,22 @@
     <div class="tixboxes-container">
       <div class="field-div">
         <%= form.label :software, 'Games:' %>
-        <%= form.check_box :software, :class => "form-tickbox" %>
+        <%= form.check_box :software, {:checked=>true},:class => "form-tickbox" %>
       </div>
 
       <div class="field-div">
         <%= form.label :hardware, 'Hardware:' %>
-        <%= form.check_box :hardware, :class => "form-tickbox" %>
+        <%= form.check_box :hardware, {:checked=>true},:class => "form-tickbox" %>
       </div>
 
+      <div class="field-div">
+      <%= form.label :news, 'News:' %>
+      <%= form.check_box :news, {:checked=>true}, :class => "form-tickbox" %>
+      </div>
+
+      <div class="field-div">
+        <%= form.label :offers, 'Offers:' %>
+        <%= form.check_box :offers, {:checked=>true}, :class => "form-tickbox" %>
+      </div>
     </div>
   <% end %>
