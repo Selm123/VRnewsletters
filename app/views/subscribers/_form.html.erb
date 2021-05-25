@@ -15,22 +15,23 @@
   <button class="close">X</button>
   <p class='popup-topper'>Just need a few details...</p>
   <div class="field-div">
-    <p><%= form.label :first_name, 'First Name' %></p>
+    <p class='input-label'><%= form.label :first_name, 'First Name' %></p>
     <%= form.text_area :first_name, :class => "form-input fn-input"%>
   </div>
 
   <div class="field-div">
-    <p><%= form.label :last_name, 'Surname' %></p>
+    <p class='input-label'><%= form.label :last_name, 'Surname' %></p>
     <%= form.text_area :last_name, :class => "form-input ln-input" %>
   </div>
 
   <div class="field-div">
-    <p><%= form.label :email, 'Email' %></p>
+    <p class='input-label'><%= form.label :email, 'Email' %></p>
     <%= form.text_area :email, :class => "form-input email-input", placeholder: "Enter your email here"%>
   </div>
 
-  <input type="checkbox" class='termsconditions-box'> <span>By ticking this box, you are agreeing to the Oculus Terms of Service and Oculus Privacy Policy. You may unsubscribe at any time.</span>
-  <h2>Which updates would you like?:</h2>
+  <input type="checkbox" class='termsconditions-box'> <p class='terms'>By ticking this box, you are agreeing to the Oculus Terms of Service and Oculus Privacy Policy. You may unsubscribe at any time.</p>
+
+  <h2 class='askupdates'>Which updates would you like?:</h2>
   <div class="tixboxes-container">
     <div class="firstPartTickbox">
     <div class="field-div">
@@ -56,5 +57,5 @@
       </div>
   </div>
 
-  <%= form.submit "Sign Up", :class => 'submit-button'%>
+  <%= form.submit "SIGN UP", :class => 'submit-button'%>
 <% end %>

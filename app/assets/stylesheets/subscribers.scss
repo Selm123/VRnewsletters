@@ -14,6 +14,14 @@
   font-size: !important 15px;
 }
 
+.terms {
+  font-size: 30px;
+}
+
+.askupdates {
+  font-size: 45px;
+}
+
 .header {
   height: 135px;
   width: 100vw;
@@ -69,6 +77,15 @@
   line-height: 20px;
 }
 
+.input-label {
+  font-size: 39px;
+}
+
+.popup-topper {
+  font-size: 45px;
+  margin-top: 0px;
+}
+
 .pop-up {
   font-family: 'Roboto', sans-serif;
   top: 13vh;
@@ -78,7 +95,7 @@
   margin: 0 auto;
   position: absolute;
   left: 5vw;
-  height: 100vh;
+  height: 105vh;
   display: none;
   border-radius: 20px;
 }
@@ -96,15 +113,21 @@
 }
 
 .form-input {
-  width: 184px;
-  height: 38px;
+  width: 430px;
+  height: 85px;
   left: 39px;
   top: 113px;
-  background: rgba(229, 229, 229, 0.54);
+  background: #E5E5E5;
   border: 1px solid #000000;
   box-sizing: border-box;
   resize: none;
-  border-radius: 9px;
+  border-radius: 17px;
+  font-size: 39px;
+  font-style: 'Roboto', sans-serif;
+}
+
+.form-input.email-input {
+  width: 700px;
 }
 
 .show {
@@ -112,17 +135,18 @@
 }
 
 .submit-button {
-  background-color: black;
   color: white;
   font-weight: bold;
   border: none;
   padding: 10px;
-  border-radius: 7px;
-  width: 140px;
-  height: 40px;
+  width: 372px;
+  height: 100px;
   left: 20vw;
   position: absolute;
   margin-top: 80px;
+  border-radius: 40px;
+  background-color: #1e65c1;
+  font-size: 200%;
 }
 
 .main {
@@ -211,15 +235,6 @@
   border:0;
   color: white;
   font-size: 350%;
-}
-
-.submit-button {
-  width: 372px;
-  height: 60px;
-  border-radius: 30px;
-  background-color: #1e65c1;
-  color: white;
-  font-size: 200%;
 }
 
 .pop-up-wrapper {
