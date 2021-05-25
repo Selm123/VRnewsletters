@@ -64,7 +64,7 @@
   margin: 0 auto;
   position: absolute;
   left: 5vw;
-  height: 30vh;
+  height: 50vh;
   display: none;
 }
 
@@ -73,11 +73,10 @@
   height: 38px;
   left: 39px;
   top: 113px;
-  resize: none;
-
   background: rgba(229, 229, 229, 0.54);
   border: 1px solid #000000;
   box-sizing: border-box;
+  resize: none;
   border-radius: 9px;
 }
 
@@ -99,19 +98,28 @@
 .main {
   background-image: url("/assets/bacground.png");
   background-size: cover;
+  background-position: center;
+  width: 100vw;
   height: 400px;
+  margin-top: 35px;
 }
 
-button {
+.buy-btn {
+
+}
+
+.sign-up-btn {
   width: 372px;
   height: 114px;
   border-radius: 30px;
   background-color: #1e65c1;
   color: white;
   font-size: 200%;
+  border: none;
+  margin: 0 auto;
 }
 
-.title p {
+.homebody {
   position: absolute;
   width: 183px;
   height: 161px;
@@ -122,7 +130,7 @@ button {
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
-  line-height: 23px;
+  line-height: 36px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -154,7 +162,7 @@ button {
 
 .submit-button {
   width: 372px;
-  height: 114px;
+  height: 60px;
   border-radius: 30px;
   background-color: #1e65c1;
   color: white;

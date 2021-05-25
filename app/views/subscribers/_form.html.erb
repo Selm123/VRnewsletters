@@ -16,21 +16,17 @@
     <p>Just need a few details...</p>
     <div class="field-div">
       <%= form.label :first_name, 'First Name' %>
-      <%= form.text_area :first_name, :class => "form-input", :class=>"fn-input"%>
+      <%= form.text_area :first_name, :class => "form-input fn-input"%>
     </div>
 
     <div class="field-div">
       <%= form.label :last_name, 'Surname' %>
-      <%= form.text_area :last_name, :class => "form-input", :class=>"ln-input" %>
+      <%= form.text_area :last_name, :class => "form-input ln-input" %>
     </div>
 
     <div class="field-div">
       <%= form.label :email, 'Email' %>
-      <%= form.text_area :email, :class => "form-input", placeholder: "Enter your email here", :class=>"email-input" %>
-    </div>
-
-    <div class="button-div">
-      <%= form.submit "Sign Up", :class => 'submit-button'%>
+      <%= form.text_area :email, :class => "form-input email-input", placeholder: "Enter your email here"%>
     </div>
 
     <input type="checkbox"> <span>By ticking this box, you are agreeing to the Oculus Terms of Service and Oculus Privacy Policy. You may unsubscribe at any time.</span>
@@ -56,4 +52,9 @@
         <%= form.check_box :offers, {:checked=>true}, :class => "form-tickbox" %>
       </div>
     </div>
+
+    <div class="button-div">
+      <%= form.submit "Sign Up", :class => 'submit-button'%>
+    </div>
+
   <% end %>
