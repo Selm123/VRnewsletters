@@ -1,6 +1,6 @@
 class SubscribersController < ApplicationController
   before_action :set_subscriber, only: %i[ show edit update destroy ]
-  before_action :check_for_admin, :except => [:new, :create]
+  before_action :check_for_admin, :except => [:new, :create, :show]
   # GET /subscribers or /subscribers.json
   def index
     @subscribers = Subscriber.all
@@ -23,16 +23,8 @@ class SubscribersController < ApplicationController
   def create
 
     @subscriber = Subscriber.create(subscriber_params)
-    respond_to do |format|
-      if @subscriber.save
-        format.html { redirect_to @subscriber, notice: "Subscriber was successfully created." }
-        format.json { render :show, status: :created, location: @subscriber }
+    redirect_to @subscriber, notice: "Subscriber was successfully created."
 
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @subscriber.errors, status: :unprocessable_entity }
-      end
-    end
   end
 
   # PATCH/PUT /subscribers/1 or /subscribers/1.json
