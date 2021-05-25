@@ -1,6 +1,6 @@
 class SubscribersController < ApplicationController
   before_action :set_subscriber, only: %i[ show edit update destroy ]
-  before_action :check_for_admin, :except => [:new]
+  before_action :check_for_admin, :except => [:new, :create]
   # GET /subscribers or /subscribers.json
   def index
     @subscribers = Subscriber.all
@@ -65,6 +65,6 @@ class SubscribersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def subscriber_params
-      params.require(:subscriber).permit(:email, :first_name, :last_name, :software, :hardware)
+      params.require(:subscriber).permit(:email, :first_name, :last_name, :software, :hardware, :news, :offers )
     end
 end

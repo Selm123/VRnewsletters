@@ -8,7 +8,6 @@ $(document).ready(function () {
   });
 
   const validateName = (name) => {
-    name = name.trim();
     let nameArr = name.split("");
     for (let i = 0; i < nameArr.length; i++) {
       if (!isNaN(nameArr[i] - 0)) {
@@ -23,8 +22,7 @@ $(document).ready(function () {
   };
 
   const validateEmail = (email) => {
-    email = email.trim();
-    let emailArr = email.trim().split("");
+    let emailArr = email.split("");
     let countAt = 0;
     let countDot = 0;
     for (let i = 0; i < emailArr.length; i++) {
@@ -42,7 +40,6 @@ $(document).ready(function () {
   };
 
   $(".submit-button").on("click", function () {
-    console.log('submit')
     if (!validateName($(".fn-input").val())) {
       alert("invalid first name");
     }
