@@ -52,12 +52,8 @@ $(document).ready(function () {
     if (!validateEmail($(".email-input").val())) {
       alert("invalid email");
     }
+    return true;
   });
-
-  $( '.homepage-link' ).on('click', function () {
-    $('.subcribe').hide();
-    console.log('working');
-  })
 
   // $(".submit-button").on("click", function () {
   //   console.log('submit 2')

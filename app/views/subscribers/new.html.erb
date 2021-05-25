@@ -20,10 +20,12 @@
     </div>
     <button class="buy-btn">BUY NOW</button>
 
+  <% unless params[:submitted].present? %>
     <div class="subscribe">
       <p>Get notified of discounts, new products and games!</p>
       <button class="sign-up-btn">SIGN UP FOR NEWS & OFFERS</button>
     </div>
+  <% end %>
   </div>
 
 </div>
