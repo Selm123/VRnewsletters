@@ -42,13 +42,22 @@ $(document).ready(function () {
   $(".submit-button").on("click", function () {
     if (!validateName($(".fn-input").val())) {
       alert("invalid first name");
+      return false;
     }
     if (!validateName($(".ln-input").val())) {
       alert("invalid last name");
+      return false;
     }
     if (!validateEmail($(".email-input").val())) {
       alert("invalid email");
+      return false;
     }
+
+    if (!$(".termsconditions-box").is(":checked")) {
+      alert("Agree to terms and conditions to proceed.");
+      return false;
+    }
+
     return true;
   });
 
