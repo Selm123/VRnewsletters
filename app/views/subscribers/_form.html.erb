@@ -13,19 +13,19 @@
   <% end %>
 
   <button class="close">X</button>
-  <p>Just need a few details...</p>
+  <p class='popup-topper'>Just need a few details...</p>
   <div class="field-div">
     <p><%= form.label :first_name, 'First Name' %></p>
     <%= form.text_area :first_name, :class => "form-input fn-input"%>
   </div>
 
   <div class="field-div">
-    <p><%= form.label :last_name, 'Surname' %></p>  
+    <p><%= form.label :last_name, 'Surname' %></p>
     <%= form.text_area :last_name, :class => "form-input ln-input" %>
   </div>
 
   <div class="field-div">
-    <p><%= form.label :email, 'Email' %></p> 
+    <p><%= form.label :email, 'Email' %></p>
     <%= form.text_area :email, :class => "form-input email-input", placeholder: "Enter your email here"%>
   </div>
 
