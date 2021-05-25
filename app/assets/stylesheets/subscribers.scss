@@ -72,7 +72,7 @@
   margin: 0 auto;
   position: absolute;
   left: 5vw;
-  height: 50vh;
+  height: 70vh;
   display: none;
 }
 
@@ -112,6 +112,8 @@
   border-radius: 7px;
   width: 140px;
   height: 40px;
+  left: 20vw;
+  position: absolute;
 }
 
 .main {
@@ -191,11 +193,13 @@
 }
 
 .close {
-  margin-left: 80vw;
+  margin-left: 70vw;
   width: 10vw;
   height: 4vh;
   background-color: black;
   border:0;
+  color: white;
+  font-size: 350%;
 }
 
 .submit-button {
@@ -205,4 +209,25 @@
   background-color: #1e65c1;
   color: white;
   font-size: 200%;
+}
+
+.pop-up-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.pop-up-wrapper p{
+  font-size: 300%;
+}
+
+.pop-up-wrapper span{
+  font-size: 200%;
+}
+
+// .pop-up-wrapper label{
+//   font-size: 350%;
+// }
+
+.field-div {
+  // display: inline-block;
 }
