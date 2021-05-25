@@ -20,19 +20,18 @@
   </div>
 
   <div class="field-div">
-    <p><%= form.label :last_name, 'Surname' %></p>  
+    <p><%= form.label :last_name, 'Surname' %></p>
     <%= form.text_area :last_name, :class => "form-input ln-input" %>
   </div>
 
   <div class="field-div">
-    <p><%= form.label :email, 'Email' %></p> 
+    <p><%= form.label :email, 'Email' %></p>
     <%= form.text_area :email, :class => "form-input email-input", placeholder: "Enter your email here"%>
   </div>
 
   <input type="checkbox" class='termsconditions-box'> <span>By ticking this box, you are agreeing to the Oculus Terms of Service and Oculus Privacy Policy. You may unsubscribe at any time.</span>
 
   <div class="tixboxes-container">
-
     <div class="field-div">
       <%= form.label :software, 'Games:' %>
       <%= form.check_box :software, {:checked=>true},:class => "form-tickbox" %>
