@@ -30,26 +30,29 @@
   </div>
 
   <input type="checkbox" class='termsconditions-box'> <span>By ticking this box, you are agreeing to the Oculus Terms of Service and Oculus Privacy Policy. You may unsubscribe at any time.</span>
-
+  <h2>Which updates would you like?:</h2>
   <div class="tixboxes-container">
+    <div class="firstPartTickbox">
     <div class="field-div">
-      <%= form.label :software, 'Games:' %>
+      <%= form.label :software, 'Games:' ,:class => "tickbox-title" %>
       <%= form.check_box :software, {:checked=>true},:class => "form-tickbox" %>
     </div>
 
       <div class="field-div">
-        <%= form.label :hardware, 'Hardware:' %>
+        <%= form.label :hardware, 'Hardware:',:class => "tickbox-title" %>
         <%= form.check_box :hardware, {:checked=>true},:class => "form-tickbox" %>
       </div>
-
+      </div>
+      <div class="secondPartTickbox">
       <div class="field-div">
-      <%= form.label :news, 'News:' %>
+      <%= form.label :news, 'News:',:class => "tickbox-title" %>
       <%= form.check_box :news, {:checked=>true}, :class => "form-tickbox" %>
       </div>
 
       <div class="field-div">
-        <%= form.label :offers, 'Offers:' %>
+        <%= form.label :offers, 'Offers:',:class => "tickbox-title" %>
         <%= form.check_box :offers, {:checked=>true}, :class => "form-tickbox" %>
+      </div>
       </div>
   </div>
 
