@@ -1,60 +1,51 @@
 
-  <%= form_with(model: subscriber, local: true) do |form| %>
-    <% if subscriber.errors.any? %>
-      <div id="error_explanation">
-        <h2><%= pluralize(subscriber.errors.count, "error") %> prohibited this subscriber from being saved:</h2>
+<%= form_with(model: subscriber, local: true) do |form| %>
+  <% if subscriber.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(subscriber.errors.count, "error") %> prohibited this subscriber from being saved:</h2>
 
-        <ul>
-        <% subscriber.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-        </ul>
-      </div>
-    <% end %>
-
-    <button class="close">X</button>
-    <p>Just need a few details...</p>
-    <div class="field-div">
-      <%= form.label :first_name, 'First Name' %>
-      <%= form.text_area :first_name, :class => "form-input fn-input"%>
+      <ul>
+      <% subscriber.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
     </div>
-
-    <div class="field-div">
-      <%= form.label :last_name, 'Surname' %>
-      <%= form.text_area :last_name, :class => "form-input ln-input" %>
-    </div>
-
-    <div class="field-div">
-      <%= form.label :email, 'Email' %>
-      <%= form.text_area :email, :class => "form-input email-input", placeholder: "Enter your email here"%>
-    </div>
-
-    <input type="checkbox"> <span>By ticking this box, you are agreeing to the Oculus Terms of Service and Oculus Privacy Policy. You may unsubscribe at any time.</span>
-
-    <div class="tixboxes-container">
-      <div class="field-div">
-        <%= form.label :software, 'Games:' %>
-        <%= form.check_box :software, {:checked=>true},:class => "form-tickbox" %>
-      </div>
-
-      <div class="field-div">
-        <%= form.label :hardware, 'Hardware:' %>
-        <%= form.check_box :hardware, {:checked=>true},:class => "form-tickbox" %>
-      </div>
-
-      <div class="field-div">
-      <%= form.label :news, 'News:' %>
-      <%= form.check_box :news, {:checked=>true}, :class => "form-tickbox" %>
-      </div>
-
-      <div class="field-div">
-        <%= form.label :offers, 'Offers:' %>
-        <%= form.check_box :offers, {:checked=>true}, :class => "form-tickbox" %>
-      </div>
-    </div>
-
-    <div class="button-div">
-      <%= form.submit "Sign Up", :class => 'submit-button'%>
-    </div>
-
   <% end %>
+
+  <button class="close">X</button>
+  <p>Just need a few details...</p>
+  <div class="field-div">
+    <%= form.label :first_name, 'First Name' %>
+    <%= form.text_area :first_name, :class => "form-input fn-input"%>
+  </div>
+
+  <div class="field-div">
+    <%= form.label :last_name, 'Surname' %>
+    <%= form.text_area :last_name, :class => "form-input ln-input" %>
+  </div>
+
+  <div class="field-div">
+    <%= form.label :email, 'Email' %>
+    <%= form.text_area :email, :class => "form-input email-input", placeholder: "Enter your email here"%>
+  </div>
+
+  <input type="checkbox"> <span>By ticking this box, you are agreeing to the Oculus Terms of Service and Oculus Privacy Policy. You may unsubscribe at any time.</span>
+
+  <div class="tixboxes-container">
+
+    <div class="field-div">
+      <%= form.label :software, 'Games:' %>
+      <%= form.check_box :software, :class => "form-tickbox" %>
+    </div>
+
+    <div class="field-div">
+      <%= form.label :hardware, 'Hardware:' %>
+      <%= form.check_box :hardware, :class => "form-tickbox" %>
+    </div>
+
+  </div>
+
+  <%= form.submit "Sign Up", :class => 'submit-button'%>
+
+
+<% end %>

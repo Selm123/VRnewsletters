@@ -1,29 +1,30 @@
-<p id="notice"><%= notice %></p>
+<div class='header'>
 
-<p>
-  <strong>Email:</strong>
-  <%= @subscriber.email %>
-</p>
+  <div class="dropdown">
+    <span class='dropdown-icon'>☰</span>
+    <div class="dropdown-content">
+      <p class='dropdown-item'>Hello World!</p>
+      <p class='dropdown-item'>Hello Alex!</p>
+      <p class='dropdown-item'>Hello Faith!</p>
+    </div>
+  </div>
 
-<p>
-  <strong>First name:</strong>
-  <%= @subscriber.first_name %>
-</p>
+  <%# <img src="/assets/logo.jpg" alt="company logo" class='header-logo'> %>
+  <img src="/assets/title.png" alt="title" class='header-logo'>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @subscriber.last_name %>
-</p>
+  <%# <h1 class='header-name'>oculus</h1> %>
 
-<p>
-  <strong>Software:</strong>
-  <%= @subscriber.software %>
-</p>
+  <div class="main">
+    <div class="title">
+      <p class='homebody'>OCULUS QUEST 2 GIVES YOU THE FREEDOM TO DO IT ALL. GAMES, ENTERTAINMENT, LIVE EVENTS, FITNESS AND MORE.</p>
+    </div>
+    <button class="buy-btn">BUY NOW</button>
+  </div>
 
-<p>
-  <strong>Hardware:</strong>
-  <%= @subscriber.hardware %>
-</p>
+  <div class='subscribed-pop-up'>
+    <h1>Welcome to the Cutting Edge of VR</h1>
+    <p>We'll keep you updated with the latest from Oculus!</p>
+    <%= link_to 'Back to Site', root_path, :class => 'homepage-link' %>
+  </div>
 
-<%= link_to 'Edit', edit_subscriber_path(@subscriber) %> |
-<%= link_to 'Back', subscribers_path %>
+</div>
